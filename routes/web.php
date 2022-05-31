@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//Route::get('/', function () {return view('welcome');});
+Route::get('','TopController@index');
+Route::get('/q',function(){ 
+    return view('q.quest');
 });
+

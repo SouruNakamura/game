@@ -11,6 +11,11 @@ class StoryQuestionTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+    \DB::table('story_question')->delete();
+ 
+    \DB::table('story_question')->insert([
+    'id' => '1',
+    'question' => 'ストーリー＋１の質問'
+    ]);
     }
 }

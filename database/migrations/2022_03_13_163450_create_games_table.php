@@ -16,9 +16,12 @@ class CreateGamesTable extends Migration
         Schema::create('games', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->integer('graphic_id');
-            $table->integer('system_id');
-            $table->integer('story_id');
+            $table->integer('graphic_score_min');
+            $table->integer('graphic_score_max');
+            $table->integer('system_score_min');
+            $table->integer('system_score_max');
+            $table->integer('story_score_min');
+            $table->integer('story_score_max');
             $table->timestamps();
         });
     }

@@ -14,21 +14,15 @@ class GamesTableSeeder extends Seeder
   \DB::table('games')->delete();
  
   \DB::table('games')->insert([
-  'game_id' => '1',
-  'graphic_id' => '1',
-  'system_id' => '1',
-  'story_id' => '1',
-  'game_name' => ''
+  'id' => '1',
+  'graphic_score_min' => '1',
+  'graphic_score_max' => '2',
+  'system_score_min' => '1',
+  'system_score_max' => '3',
+  'story_score_min' => '1',
+  'story_score_max' => '2',
+  'name' => 'スーパーマリオブラザーズ'
   ]);
-  
-  \DB::table('games')->insert([
-  'game_id' => '2',
-  'graphic_id' => '1',
-  'system_id' => '1',
-  'story_id' => '1',
-  'game_name' => ''
-  ]);
-  
   
     }
 }
